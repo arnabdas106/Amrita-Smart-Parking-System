@@ -16,7 +16,7 @@ import com.google.firebase.database.ValueEventListener;
 public class MainActivity extends AppCompatActivity {
 
     private TextView available, unavailable,message;
-    private int iAvailable, iUnavailable, total=20  ;
+    private int iAvailable, iUnavailable, total=20 ;
     private String TAG;
 
     @Override
