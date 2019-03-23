@@ -8,11 +8,38 @@
     android:orientation="vertical">
 
 
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/amritalogo"
+        android:scaleType="centerInside"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:id="@+id/des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:text="Car Parking Management System"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="normal|italic" />
 
     <TextView
         android:id="@+id/totalView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/des"
         android:textAllCaps="true"
         android:layout_margin="20dp"
         android:textStyle="bold"
@@ -32,7 +59,9 @@
         android:id="@+id/unavailable"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
         android:textSize="20sp"
         android:layout_below="@id/available"/>
 
@@ -43,7 +72,7 @@
         android:layout_below="@id/unavailable"
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="15dp"
         android:gravity="center"
         android:textColor="#ff0000"
         android:textSize="28sp"/>
@@ -61,6 +90,7 @@
         android:layout_height="wrap_content"
         android:text="(slots available)"
         android:layout_toRightOf="@id/totalView"
+        android:layout_below="@id/des"
         android:textSize="20sp"
         android:layout_marginTop="22dp"/>
 
