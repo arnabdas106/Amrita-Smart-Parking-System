@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,27 +10,22 @@
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/amritalogo"
-        android:scaleType="centerInside"
-        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
         android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"/>
+        android:layout_marginRight="20dp"
+        android:src="@drawable/new_logo" />
 
     <TextView
         android:id="@+id/des"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/logo"
-
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="15dp"
         android:gravity="center"
-        android:marqueeRepeatLimit="marquee_forever"
-        android:text="Car Parking Management System"
-        android:textAllCaps="false"
+        android:text="Car Parking Management System test app (under development)"
         android:textColor="#000"
         android:textSize="20sp"
         android:textStyle="normal|italic" />
@@ -39,11 +34,11 @@
         android:id="@+id/totalView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/des"
         android:textAllCaps="true"
-        android:layout_margin="20dp"
+        android:layout_marginLeft="20dp"
         android:textStyle="bold"
         android:textColor="#000"
+        android:layout_weight="0.5"
         android:textSize="25sp"
         android:text="TOTAL: 20"/>
 
@@ -51,9 +46,11 @@
         android:id="@+id/available"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:textSize="20sp"
-        android:layout_below="@id/totalView"/>
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="0.5"
+        android:textSize="20sp"/>
 
     <TextView
         android:id="@+id/unavailable"
@@ -62,17 +59,17 @@
         android:layout_marginTop="15dp"
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
-        android:textSize="20sp"
-        android:layout_below="@id/available"/>
+        android:layout_weight="0.5"
+        android:textSize="20sp"/>
 
     <TextView
         android:id="@+id/message"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/unavailable"
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="15dp"
+        android:layout_weight="1.5"
         android:gravity="center"
         android:textColor="#ff0000"
         android:textSize="28sp"/>
@@ -81,17 +78,8 @@
     <ImageView
         android:layout_width="202dp"
         android:layout_height="45dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"
-        android:src="@drawable/logo" />
+        android:layout_gravity="center"
+        android:src="@drawable/logo"
+        android:layout_marginTop="10dp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="(slots available)"
-        android:layout_toRightOf="@id/totalView"
-        android:layout_below="@id/des"
-        android:textSize="20sp"
-        android:layout_marginTop="22dp"/>
-
-</RelativeLayout>
+</LinearLayout>

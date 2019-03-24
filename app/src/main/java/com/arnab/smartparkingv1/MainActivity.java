@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
                     unavailable.setText("Occupied:  " + iUnavailable);
                     int less = 20-iUnavailable;
                     message.setTextColor(Color.BLUE);
-                    message.setText("Hurry up! only "+ less + " slots available!");
+                    message.setText("Hurry up! only "+ less + " slot(s) available!");
                     available.setTextColor(Color.BLUE);
                 }
 
