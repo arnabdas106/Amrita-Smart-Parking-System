@@ -40,7 +40,7 @@
         android:textColor="#000"
         android:layout_weight="0.5"
         android:textSize="25sp"
-        android:text="TOTAL: 20"/>
+        android:text="TOTAL: 10"/>
 
     <TextView
         android:id="@+id/available"

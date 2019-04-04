@@ -16,7 +16,7 @@ import com.google.firebase.database.ValueEventListener;
 public class MainActivity extends AppCompatActivity {
 
     private TextView available, unavailable,message;
-    private int iAvailable, iUnavailable, total=20 ;
+    private int iAvailable, iUnavailable, total=10 ;
     private String TAG;
 
     @Override
@@ -57,17 +57,17 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "Parking FULL!", Toast.LENGTH_LONG).show();
                 }
 
-                else if(iUnavailable<20 && iUnavailable>=17)
+                else if(iUnavailable<10 && iUnavailable>=8)
                 {
                     available.setText("Available: " + iAvailable);
                     unavailable.setText("Occupied:  " + iUnavailable);
-                    int less = 20-iUnavailable;
+                    int less = 10-iUnavailable;
                     message.setTextColor(Color.BLUE);
                     message.setText("Hurry up! only "+ less + " slot(s) available!");
                     available.setTextColor(Color.BLUE);
                 }
 
-                else if(iUnavailable<=16 )
+                else if(iUnavailable<=7 )
                 {
                     available.setText("Available: " + iAvailable);
                     unavailable.setText("Occupied:  " + iUnavailable);
